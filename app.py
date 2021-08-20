@@ -29,6 +29,14 @@ def hello():
 def Home(name):
 	return render_template('index.html', name_html=name)
 
+@app.route('/store/<string:name>')
+def Store(name):
+	items = [{'name': 'Ice cream', 'price': 50},
+			 {'name': 'Cookie', 'price': 35},
+			 {'name': 'Chocolate', 'price': 40},
+			 {'name': 'Milk', 'price': 32.5}]
+	return render_template('temp.html', name=name, items=items)
+
 @app.route('/api', methods=['GET'])
 def get_api():
     return jsonify(data)
