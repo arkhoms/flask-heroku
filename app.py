@@ -1,9 +1,9 @@
 from flask import Flask, jsonify
 #from flask import Flask, render_template
 from flask import Flask, request, redirect, url_for, render_template, send_from_directory,flash 
-from werkzeug.utils import secure_filename
+#from werkzeug.utils import secure_filename
 import cv2
-import numpy as np
+#import numpy as np
 
 app = Flask(__name__)
 
