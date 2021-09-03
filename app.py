@@ -1,5 +1,6 @@
 from flask import Flask, jsonify
-from flask import Flask, render_template
+#from flask import Flask, render_template
+from flask import Flask, request, redirect, url_for, render_template, send_from_directory,flash 
 
 app = Flask(__name__)
 
